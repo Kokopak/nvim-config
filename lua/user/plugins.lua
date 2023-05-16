@@ -1,9 +1,11 @@
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
-
-	use("nvim-telescope/telescope.nvim")
 	use("folke/which-key.nvim")
+
+	-- Telescope
+	use("nvim-telescope/telescope.nvim")
+	use("nvim-telescope/telescope-file-browser.nvim")
 
 	-- Treesitter
 	use("nvim-treesitter/nvim-treesitter")
