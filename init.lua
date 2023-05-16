@@ -1,3 +1,11 @@
-require("plugins")
-require("lsp.mason")
-require("lsp.null-ls")
+require("user.options")
+require("user.plugins")
+require("user.treesitter")
+require("user.keymaps")
+require("user.telescope")
+require("user.which-key")
+
+require("user.lsp.mason")
+require("user.lsp.null-ls")
+
+vim.cmd([[colorscheme dracula]])
