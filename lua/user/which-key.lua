@@ -6,5 +6,6 @@ wk.register({
 		f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
 		g = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
 		b = { "<cmd>Telescope file_browser<cr>", "File Browser" },
+		r = { "<cmd>Telescope lsp_references<cr>", "LSP References" },
 	},
 }, { prefix = "<leader>" })
