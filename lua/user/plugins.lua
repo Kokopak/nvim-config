@@ -3,9 +3,9 @@ return require("packer").startup(function(use)
 	use("nvim-lua/plenary.nvim")
 	use("folke/which-key.nvim")
 	use("nvim-tree/nvim-tree.lua")
+	use("nvim-tree/nvim-web-devicons")
 
 	-- CMP
-	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-buffer")
 	use("hrsh7th/cmp-path")
