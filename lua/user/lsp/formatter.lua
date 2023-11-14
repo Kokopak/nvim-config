@@ -3,21 +3,8 @@ local util = require("formatter.util")
 
 formatter.setup({
 	filetype = {
-		lua = {
-			function()
-				return {
-					exe = "stylua",
-					args = {
-						"--search-parent-directories",
-						"--stdin-filepath",
-						util.escape_path(util.get_current_buffer_file_path()),
-						"--",
-						"-",
-					},
-					stdin = true,
-				}
-			end,
-		},
+		lua = { require("formatter.filetypes.lua").stylua },
+		python = { require("formatter.filetypes.python").ruff, require("formatter.filetypes.python").isort },
 	},
 })
 
