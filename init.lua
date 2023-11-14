@@ -8,6 +8,6 @@ require("user.cmp")
 require("user.nvim-tree")
 
 require("user.lsp.mason")
-require("user.lsp.null-ls")
+require("user.lsp.formatter")
 
 vim.cmd([[colorscheme dracula]])
