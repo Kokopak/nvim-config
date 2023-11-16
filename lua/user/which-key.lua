@@ -8,4 +8,8 @@ wk.register({
 		b = { "<cmd>NvimTreeToggle<cr>", "File Browser" },
 		r = { "<cmd>Telescope lsp_references<cr>", "LSP References" },
 	},
+	g = {
+		name = "goto",
+		d = { "<cmd>Telescope lsp_definitions<cr>", "LSP Definitions" },
+	},
 }, { prefix = "<leader>" })
